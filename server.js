@@ -81,6 +81,9 @@ Reason: The sentence is already correct.`;
   }
 });
 
-app.listen(3001, () => {
-  console.log("Grammar correction API running on http://localhost:3001");
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log(`Grammar correction API running on http://localhost:${PORT}`);
 });
+
